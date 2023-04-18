@@ -6,6 +6,9 @@ Thanks for checking out this front-end coding challenge.
 
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
+![desktop-design](https://user-images.githubusercontent.com/125904295/232638949-c8dd2469-15cb-48be-b292-17915e4d77b3.jpg)
+![mobile-design](https://user-images.githubusercontent.com/125904295/232638979-854ab195-bc9b-4f35-ab09-12c2b3b03d88.jpg)
+
 ## Table of contents
 
 - [Links](#links)
