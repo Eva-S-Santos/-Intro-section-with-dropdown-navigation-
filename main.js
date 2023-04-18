@@ -7,9 +7,6 @@ function myFunction() {
   }
 }
 
-function closeFunc() {
-  myFunction();
-}
 const iconMenu = document.getElementById("hamburger-icon");
 const closeIcon = document.getElementById("close-btn");
 const navBg = document.getElementById("nav-bg");
@@ -21,15 +18,12 @@ iconMenu.addEventListener("click", () => {
 });
 
 closeIcon.addEventListener("click", () => {
+  myFunction();
   navBg.style.width = "0%";
   navBg.style.height = "0%";
   navBg.style.opacity = "0";
   dropDownContentFt.classList.remove("dropd-ft-show")
   dropDownContentComp.classList.remove("dropd-c-show")
-});
-
-navBg.addEventListener("click", () => {
-
 });
 
 function navBgNone(x) {
@@ -115,4 +109,5 @@ window.onclick = function(event) {
     dropDownContentComp.classList.remove("dropd-c-show")
   } 
 }
+
 
