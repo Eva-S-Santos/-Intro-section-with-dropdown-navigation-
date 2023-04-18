@@ -24,11 +24,13 @@ closeIcon.addEventListener("click", () => {
   navBg.style.width = "0%";
   navBg.style.height = "0%";
   navBg.style.opacity = "0";
-  dropDownContentFt.classList.remove("dropd-ft-show");
-  dropDownContentComp.classList.remove("dropd-c-show");
+  dropDownContentFt.classList.remove("dropd-ft-show")
+  dropDownContentComp.classList.remove("dropd-c-show")
 });
 
-navBg.addEventListener("click", () => {});
+navBg.addEventListener("click", () => {
+
+});
 
 function navBgNone(x) {
   if (x.matches) {
@@ -47,6 +49,7 @@ x.addListener(navBgNone); // Attach listener function on state changes
 
 arrowDownFt = document.createElement("img");
 arrowDownFt.src = "images/icon-arrow-down.svg";
+arrowDownFt.alt = "icon-down";
 document.getElementById("drop-btn-ft").appendChild(arrowDownFt);
 
 const ftBtn = document.getElementById("drop-btn-ft");
@@ -70,6 +73,7 @@ dropDownContentFt.addEventListener("mouseleave", () => {
 
 arrowDownC = document.createElement("img");
 arrowDownC.src = "images/icon-arrow-down.svg";
+arrowDownC.alt = "icon-down";
 document.getElementById("drop-btn-comp").appendChild(arrowDownC);
 
 const companyBtn = document.getElementById("drop-btn-comp");
@@ -92,22 +96,23 @@ dropDownContentComp.addEventListener("mouseleave", () => {
 });
 
 ftBtn.addEventListener("click", () => {
-  dropDownContentFt.classList.toggle("dropd-ft-show");
-  dropDownContentComp.classList.remove("dropd-c-show");
+  dropDownContentFt.classList.toggle("dropd-ft-show")
+  dropDownContentComp.classList.remove("dropd-c-show")
   arrowDownFt.src = "images/icon-arrow-down.svg";
-});
+})
 
 companyBtn.addEventListener("click", () => {
-  dropDownContentComp.classList.toggle("dropd-c-show");
-  dropDownContentFt.classList.remove("dropd-ft-show");
+  dropDownContentComp.classList.toggle("dropd-c-show")
+  dropDownContentFt.classList.remove("dropd-ft-show")
   arrowDownC.src = "images/icon-arrow-down.svg";
-});
+})
 
-window.onclick = function (event) {
-  var sideNav = document.getElementById("dd");
+window.onclick = function(event) {
+  var sideNav = document.getElementById("dd");;
 
   if (event.target.contains(sideNav) && event.target !== sideNav) {
-    dropDownContentFt.classList.remove("dropd-ft-show");
-    dropDownContentComp.classList.remove("dropd-c-show");
-  }
-};
+    dropDownContentFt.classList.remove("dropd-ft-show")
+    dropDownContentComp.classList.remove("dropd-c-show")
+  } 
+}
+
